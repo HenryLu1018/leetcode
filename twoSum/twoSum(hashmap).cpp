@@ -1,4 +1,6 @@
-/* 使用hashmap，时空复杂度均为O(n) */
+/* 
+* 使用hashmap，时空复杂度均为O(n)
+*/
 
 class Solution {
 public:
