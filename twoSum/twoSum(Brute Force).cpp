@@ -1,3 +1,5 @@
+/* 暴力搜索Brute Force，时间复杂度O(n^2)，空间复杂度O(1) */
+
 class Solution {
 public:
     vector<int> twoSum(vector<int>& nums, int target) {
