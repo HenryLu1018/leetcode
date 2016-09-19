@@ -1,3 +1,5 @@
+/* 使用hashmap，时空复杂度均为O(n) */
+
 class Solution {
 public:
     vector<int> twoSum(vector<int>& nums, int target) {
