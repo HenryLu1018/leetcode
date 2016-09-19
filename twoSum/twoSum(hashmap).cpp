@@ -4,11 +4,11 @@ class Solution {
 public:
     vector<int> twoSum(vector<int>& nums, int target) {
         // 存储最终结果
-        vector<int> result;
+        vector<int> res;
         
         // 边值条件判断（元素个数不超过1时返回空解）
         if(nums.size() <= 1)
-            return result;
+            return res;
         
         // 定义无序hashmap
         unordered_map<int,int> map;
@@ -26,13 +26,13 @@ public:
             if(map.count(rest) && map[rest] > i) // map.count(rest)等价于map.find(rest) != map.end()，且需要考虑大小顺序
             {
                 // 添加元素时小的在前，大的在后；同时注意0下标
-                result.push_back(i);
-                result.push_back(map[rest]);
+                res.push_back(i);
+                res.push_back(map[rest]);
                 
                 // 题目中明确指出有且仅有一个解，故只要找到符合条件的两个数，就跳出循环终止程序
                 break;
             }
         }
-        return result;
+        return res;
     }
 };
