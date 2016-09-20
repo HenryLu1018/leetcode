@@ -1,5 +1,5 @@
 /* 
-* 使用two-pass hashmap，先建立hashtable，再查找判断。时空复杂度均为O(n)
+* 方法一：使用two-pass hashmap（两次for循环），先建立hashtable，再查找判断。时空复杂度均为O(n)
 */
 
 class Solution {
@@ -41,7 +41,7 @@ public:
 
 
 /* 
-* 使用one-pass hashmap，一边建立hashtable，一边查找判断。时空复杂度均为O(n)
+* 方法二：使用one-pass hashmap（一次for循环），一边建立hashtable，一边查找判断。时空复杂度均为O(n)
 */
 
 class Solution {
